@@ -19,3 +19,11 @@ app.use('/user', SignupRoute);
 
 // Login route
 app.use('/user', LoginRoute);
+
+// Adim routes
+
+app.use('/admin', UploadVideo);
+
+app.listen(PORT, () => {
+    console.log("🚀 Server start at:", PORT);
+})
