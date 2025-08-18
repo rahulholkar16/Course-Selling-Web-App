@@ -16,3 +16,6 @@ app.use(cookieParser());
 
 // Sign Up route
 app.use('/user', SignupRoute);
+
+// Login route
+app.use('/user', LoginRoute);
