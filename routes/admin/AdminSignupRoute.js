@@ -1,4 +1,4 @@
-import { express, jwt, bcrypt, authSchema, AdminModel } from "../../utils/ImportExporting";
+import { express, jwt, bcrypt, authSchema, AdminModel } from "../../utils/ImportExporting.js";
 
 const AdminSignupRoute = express.Router();
 

@@ -1,5 +1,6 @@
 import { express, mongoose, cookieParser } from "./utils/ImportExporting.js";
 import { SignupRoute, LoginRoute, UploadVideo, AdminSignupRoute, AdminLoginRoute } from "./routes/routes.js";
+import { auth, authAdmin } from "./middlewares/middlewares.js";
 
 // DB Config
 mongoose.connect(process.env.DB_URL)

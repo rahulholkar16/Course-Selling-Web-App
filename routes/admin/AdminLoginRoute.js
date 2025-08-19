@@ -1,4 +1,4 @@
-import { express, jwt, AdminModel } from "../../utils/ImportExporting";
+import { express, jwt, AdminModel } from "../../utils/ImportExporting.js";
 
 const AdminLoginRoute = express.Router();
 

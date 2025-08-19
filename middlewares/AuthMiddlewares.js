@@ -1,6 +1,6 @@
-import { jwt } from "../utils/ImportExporting";
+import { jwt } from "../utils/ImportExporting.js";
 
-async function auth(req, res, next) {
+export async function auth(req, res, next) {
     try {
         const token = req.cookies?.token;
         if (!token) return res.status(401).json({ msg: "No token provide!" });
