@@ -10,6 +10,7 @@ const User = new Schema({
 }, { timestamps: true })
 
 const Admin = new Schema({
+    name: { type: String, require: true },
     email: { type: String, required: true },
     password: String
 }, { timestamps: true })

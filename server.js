@@ -1,5 +1,5 @@
 import { express, mongoose, cookieParser } from "./utils/ImportExporting.js";
-import { SignupRoute, LoginRoute, UploadVideo } from "./routes/routes.js";
+import { SignupRoute, LoginRoute, UploadVideo, AdminSignupRoute } from "./routes/routes.js";
 
 // DB Config
 mongoose.connect(process.env.DB_URL)
@@ -20,7 +20,10 @@ app.use('/user', SignupRoute);
 // Login route
 app.use('/user', LoginRoute);
 
-// Adim routes
+// ---------- User routes ----------
+
+// Admin Signup Route
+app.use('/admin', AdminSignupRoute);
 
 app.use('/admin', UploadVideo);
 
