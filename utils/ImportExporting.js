@@ -4,7 +4,7 @@ import 'dotenv/config';
 import mongoose from "mongoose";
 import { authSchema } from "../Validation/AuthValidation.js";
 import bcrypt from "bcrypt";
-import { UserModel, AdminModel, UploadVideoModel } from "../db.js";
+import { UserModel, AdminModel, VideoModel, CourseModel } from "../db.js";
 import cookieParser from "cookie-parser";
 
-export { express, jwt, mongoose, authSchema, bcrypt, UserModel, cookieParser, AdminModel, UploadVideoModel }
+export { express, jwt, mongoose, authSchema, bcrypt, UserModel, cookieParser, AdminModel, VideoModel, CourseModel };
