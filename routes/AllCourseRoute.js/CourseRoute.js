@@ -1,4 +1,4 @@
-import { express, CourseModel } from "../../utils/ImportExporting";
+import { express, CourseModel } from "../../utils/ImportExporting.js";
 
 const CoursesRoute = express.Router();
 

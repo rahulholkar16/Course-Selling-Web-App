@@ -33,7 +33,7 @@ app.use('/admin', AdminSignupRoute);
 app.use('/admin', AdminLoginRoute);
 
 // Admin Create course route
-app.use('/admin', )
+app.use('/admin', authAdmin, CoursesRoute);
 
 // Admin uploadVideo Route 
 app.use('/admin', authAdmin, UploadVideo);
