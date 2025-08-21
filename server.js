@@ -24,7 +24,7 @@ app.use('/user', LoginRoute);
 // All Courses route
 app.use('/user', auth, CoursesRoute);
 
-// ---------- User routes ----------
+// ---------- Admin routes ----------
 
 // Admin Signup Route
 app.use('/admin', AdminSignupRoute);
